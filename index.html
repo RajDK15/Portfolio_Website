@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"> RAJ KADAM</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"> RAJ KADAM</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic-1.jpeg" alt="Raj Kadam profile picture" id="profile-picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Raj Kadam</h1>
+            <p class="section__text__p2">Web Developer, Machine Learning Engineer & Data Scientist</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" 
+                onclick="window.open('./assets/Raj_Kadam(2024).pdf')">Download CV</button>
+                <button class="btn btn-color-1" 
+                onclick="location.href='./#contact'">Contact</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My linkedin profile" class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/raj-kadam-6aa442284/'">
+                <img src="./assets/github.png" alt="My github profile" class="icon"
+                onclick="location.href='https://github.com/RajDK15'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/profile-pic-2.jpeg" alt="Profile picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>2+ years <br/> Frontend Developer, Data Science & Customer Service Representative</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>BSc. Computer Science <br/> University of Mumbai (2019)</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        As a computer science graduate with a strong background in IT, I am currently working as a Senior Process Executive in an IT company. While my current role has provided me with valuable experience in process management, I am now seeking new opportunities in the field of IT, specifically in data science and front-end development.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#skills'">
+    </section>
+    <section id="skills">
+        <p class="section__text__p1"> Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-container">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Programming Languages</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/HTML5.png" alt="html-logo" class="icon">
+                            <div>
+                                <h4>HTML</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/CSS3.png" alt="css-logo" class="icon">
+                            <div>
+                                <h4>CSS</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/JavaScript.png" alt="javascript-logo" class="icon">
+                            <div>
+                                <h4>JavaScript</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/Python.png" alt="python-logo" class="icon">
+                            <div>
+                                <h4>Python</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/R.png" alt="r-logo" class="icon">
+                            <div>
+                                <h4>R</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/C++ (CPlusPlus).png" alt="cpp-logo" class="icon">
+                            <div>
+                                <h4>C++</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/MySQL.png" alt="sql-logo" class="icon">
+                            <div>
+                                <h4>MySQL</h4>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Libraries & Frameworks</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/NumPy.png" alt="numpy-logo" class="icon">
+                            <div>
+                                <h4>NumPy</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/Pandas.png" alt="pandas-logo" class="icon">
+                            <div>
+                                <h4>Pandas</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/Matplotlib.png" alt="matplotlib-logo" class="icon">
+                            <div>
+                                <h4>Matplotlib</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/scikit-learn.png" alt="scikit-logo" class="icon">
+                            <div>
+                                <h4>Scikit-Learn</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/TensorFlow.png" alt="Tf-logo" class="icon">
+                            <div>
+                                <h4>TensorFlow</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/Keras.png" alt="keras-logo" class="icon">
+                            <div>
+                                <h4>Keras</h4>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Version Control & Tools</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/Git.png" alt="git-logo" class="icon">
+                            <div>
+                                <h4>Git</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/GitHub.png" alt="github-logo" class="icon">
+                            <div>
+                                <h4>GitHub</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/Jupyter.png" alt="jupyter-logo" class="icon">
+                            <div>
+                                <h4>Jupyter</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/Visual Studio Code (VS Code).png" alt="vs-logo" class="icon">
+                            <div>
+                                <h4>VS Code</h4>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href= './#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-container">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-1.jpg" alt="Project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Credit Card Fraud Detection</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="location.href='https://github.com/RajDK15/Credit_card_fraud_detection'">
+                        GitHub
+                    </button>
+                    <button class="btn btn-color-2" onclick="location.href='https://github.com/RajDK15/Credit_card_fraud_detection'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-2.png" alt="Project 2" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Heart Disease Detection</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="location.href='https://github.com/RajDK15/Heart_Disease_Classification'">
+                        GitHub
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-3.avif" alt="Project 3" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Machine Learning Projects</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="location.href='https://github.com/RajDK15/Google_Colab_Projects'">
+                        GitHub
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href = './#project'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:rdkadam1998@outlook.com">rdkadam1998@outlook.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/raj-kadam-6aa442284/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Raj Kadam. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
